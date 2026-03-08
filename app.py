@@ -24,4 +24,4 @@ if mood:
 
     st.subheader("🎶 Recommended Songs")
     for song in songs:
-        st.markdown(f"- [{song['title']}]({song['url']})")   # test github actions
+        st.markdown(f"- [{song['title']}]({song['url']})")  # test pipeline run
