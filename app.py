@@ -9,7 +9,7 @@ st.write("Select your mood and get fresh songs from the Internet 🎧")
 
 mood = st.radio(
     "tell your mood",
-    ["Happy", "Sad", "Relaxed", "Energetic"]
+    ["Happy", "Sad", "Relaxed", "Energetic","motivation"]
 )
 
 if mood:
@@ -24,4 +24,4 @@ if mood:
 
     st.subheader("🎶 Recommended Songs")
     for song in songs:
-        st.markdown(f"- [{song['title']}]({song['url']})")
+        st.markdown(f"- [{song['title']}]({song['url']})")   # test github actions
