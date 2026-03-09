@@ -2,7 +2,7 @@ import streamlit as st
 from api_service import fetch_songs_from_api
 from database import save_songs, get_songs_from_db
 
-st.set_page_config(page_title="MoodZen 3.0.0, page_icon="🎵")
+st.set_page_config(page_title="MoodZen 3.0.0", page_icon="🎵")
 
 st.title("🎵 MoodZenn 3.0")
 st.write("Select your mood and get fresh songs from the Internet 🎧")
