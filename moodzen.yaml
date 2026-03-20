@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: devops
+    ports:
+      - "3306:3306"
+
+  moodzen:
+    build: .
+    container_name: moodzen
+    ports:
+      - "8501:8501"
+    depends_on:
+      - mysql
