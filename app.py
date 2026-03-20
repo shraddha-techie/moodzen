@@ -10,7 +10,7 @@ st.title("🎵 MoodZen 3.0")
 st.write("Select your mood and get songs from YouTube 🎧")
 
 mood = st.radio(
-    "Tell your mood",
+    "enter your mood",
     ["Happy", "Sad", "Relaxed", "Energetic"]
 )
 
